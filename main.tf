@@ -12,7 +12,7 @@ module "tool-infra" {
   for_each = var.tools
 
   ami_id = var.ami_id
-  instance_type = each.value["instace_type"]
+  instance_type = each.value["instance_type"]
   name = each.key
   port = each.value["port"]
   zone_id = var.zone_id
